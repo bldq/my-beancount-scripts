@@ -116,6 +116,32 @@ bean-price main.bean -d 2019-04-01
 ```
 具体使用请直接修改``fund.py``。
 
+## 适配 M1
+
+依赖需要用到 Python@3.7 及以下版本，M1 需要特殊处理。
+
+- 使用 pyenv 管理环境
+
+  `brew install pyenv`
+
+- 安装 x86 brew
+
+  `arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+  `alias ibrew=/usr/local/bin/brew`
+
+
+- 安装 x86 版本的 Python
+
+  `ibrew install python@3.7`
+
+  `ln -s "$(ibrew --prefix python@3.7)" .pyenv/versions/3.7.10`
+
+- 使用
+
+`pyenv local 3.7.10`
+
+
 ## 开源协议
 
 The MIT License
