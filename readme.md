@@ -139,7 +139,7 @@ bean-price main.bean -d 2019-04-01
 
 - 使用
 
-`pyenv local 3.7.10`
+  `pyenv local 3.7.10`
 
 
 ## 开源协议
